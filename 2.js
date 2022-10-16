@@ -2,7 +2,7 @@
 //Создать произвольную переменную, присвоить ей значение. C помощью if написать условие: если переменная равна “hidden”, присвоить ей значение “visible”, иначе - “hidden”.
 
 let user = 'hidden';
-if (user = 'hidden') {
+if (user == 'hidden') {
     user = 'visible';
 } else {
     user = 'hidden';
@@ -21,8 +21,9 @@ if (user2 == 0) {
 } else if (user2 < 0) {
     user2 = 'less then zero';
 } else if (user2 > 0) {
-    console.log(user2 * 10);
+    user2 *= 10;
 }
+console.log(user2);
 
 //Задание 3
 //Запросите у пользователя число и запишите его в переменную. 
@@ -100,10 +101,10 @@ if (ocenka >= 90 || project >= 10) {
 
 let cena = prompt('На какое количество дней вы хотите взять автомобиль в аренду: ');
 let zaday = 40;
-if (cena == 3) {
-    alert (cena * 40 - 20 + '$');
-} else if (cena == 7) {
+if (cena >= 7) {
     alert (cena * 40 - 50 + '$');
+} else if (cena >= 3) {
+    alert (cena * 40 - 20 + '$');
 } else {
     alert (cena * 40 + '$');
 }
@@ -112,9 +113,11 @@ if (cena == 3) {
 //Создать переменную и записать в нее число, например 10.
 //10 раз увеличивать значение этой переменной на 1. Результат вывести в консоль.
 
+let n = 10;
 for (let i = 0; i < 10; i++) {
-    console.log(10 * 1);
+    n += 1;
 }
+console.log(n);
 
 //Задание 10
 //Увеличивая счетчик цикла на 2, нужно 5 раз:
