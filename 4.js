@@ -3,7 +3,7 @@
 //alert( `number ${i}!` );
 //}
 
-/*let i = 0;
+let i = 0;
 while (i < 3) {
 alert( `number ${i}!` );
 i++
@@ -177,7 +177,7 @@ function isInteger(x) {
 }
 
 console.log(isInteger(3.11));
-console.log(isInteger(6));*/
+console.log(isInteger(6));
 
 //Задание 10
 //Написать функцию, которая принимает целое число n.   
