@@ -8,7 +8,7 @@
 //sum(1); // введите два параметра
 //sum(); // введите два параметра
 
-/*function sum(a, b) {
+function sum(a, b) {
     if (a == undefined || b == undefined) {
         console.log('введите два параметра');
     }
@@ -100,7 +100,7 @@ const copyArr = arr.map(function(item){
     return item;
 })
 
-console.log(copyArr);*/
+console.log(copyArr);
 
 //Задание 6
 //Создайте функцию sumObjectValues, которая будет суммировать все значения свойств, которые являются числами. Сумму чисел необходимо вернуть из функции.
