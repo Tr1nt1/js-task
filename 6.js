@@ -14,17 +14,19 @@ console.log(ucFirst(str));
 //Напишите функцию checkSpam(str), возвращающую true, если str содержит 'badWord' или 'XXX', а иначе false.
 //Функция должна быть нечувствительна к регистру.
 
-let strElement = 'badWord';
-
 let checkSpam = (str) => {
-    if (str == 'badWord' || srt == 'XXX') {
+    let newStr = str.toLowerCase();
+    if (newStr == 'badWord'.toLowerCase() || newStr == 'XXX'.toLowerCase()) {
         return true;
     } else {
         return false;
     }
 }
 
-console.log(checkSpam(strElement));
+console.log(checkSpam('badWord')); //true
+console.log(checkSpam('bad Word')); //false
+console.log(checkSpam('Text badword')); //true
+console.log(checkSpam('badwoRD Text')); //true
 
 //Задание 3
 //Написать функцию, которой на вход подается строка, на выход она дает символы наоборот (разворачивает строку). Пример: «привет Женя» -> «янеЖ тевирп»
